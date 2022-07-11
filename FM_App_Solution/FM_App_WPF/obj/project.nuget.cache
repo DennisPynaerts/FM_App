@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lq362LOT5Epum+wiYLcwbEZXuqhJrYDTpLG5IJXfGEhU5n3cmU5k2EZKpQK1DG0RJrY2uxPyJSgrZsSjKCmrrQ==",
+  "dgSpecHash": "BJkr5mG4XKUAFFXQTzdh4TxGvXMCvEnC2AmC+av9H4pUO94/okij6aEvxubG6OJaC8AKLnhEGDiy3Gv/MqCb/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\pynae\\Git\\FM_App\\FM_App_Solution\\FM_App_WPF\\FM_App_WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pynae\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\pynae\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

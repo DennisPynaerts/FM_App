@@ -267,6 +267,21 @@
             "rid": "win"
           }
         }
+      },
+      "FM_App_models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/FM_App_models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FM_App_models.dll": {}
+        }
       }
     }
   },
@@ -829,11 +844,17 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "FM_App_models/1.0.0": {
+      "type": "project",
+      "path": "../FM_models/FM_App_models.csproj",
+      "msbuildProject": "../FM_models/FM_App_models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Dapper >= 2.0.123",
+      "FM_App_models >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 6.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
@@ -872,7 +893,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pynae\\Git\\FM_App\\FM_App_Solution\\FM_models\\FM_App_models.csproj": {
+              "projectPath": "C:\\Users\\pynae\\Git\\FM_App\\FM_App_Solution\\FM_models\\FM_App_models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

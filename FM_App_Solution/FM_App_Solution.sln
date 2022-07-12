@@ -5,9 +5,9 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FM_App_WPF", "FM_App_WPF\FM_App_WPF.csproj", "{0A073CC3-837C-4C77-9114-39270DD15EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM_models", "FM_models\FM_models.csproj", "{B7516983-A03B-4D5D-9AF7-68B40A7A90E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM_App_models", "FM_models\FM_App_models.csproj", "{B7516983-A03B-4D5D-9AF7-68B40A7A90E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM_DAL", "FM_DAL\FM_DAL.csproj", "{1CA11A62-133D-4376-BEE6-77D50C769EEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM_App_DAL", "FM_DAL\FM_App_DAL.csproj", "{1CA11A62-133D-4376-BEE6-77D50C769EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

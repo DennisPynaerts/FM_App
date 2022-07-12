@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YjPgk6ysEwCAJZw4imJ815ZKEGl8kAL1V6vvsICMABmoumPF1pR+QAOLwZwZs/2f4hPbH8cXXyMExO25NC54SQ==",
+  "dgSpecHash": "rSGTvo3S2dldO4L13gdLY2QH+KSv1rBW9QbB20Ak44Tnsy+B0CYymm+Io141HGLfZuzkW6+AD4Bi6xV5ISMTIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pynae\\Git\\FM_App\\FM_App_Solution\\FM_App_WPF\\FM_App_WPF.csproj",
+  "projectFilePath": "C:\\Users\\pynae\\Git\\FM_App\\FM_App_Solution\\FM_DAL\\FM_App_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pynae\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
-    "C:\\Users\\pynae\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
-    "C:\\Users\\pynae\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
     "C:\\Users\\pynae\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\pynae\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\pynae\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

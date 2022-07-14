@@ -1,0 +1,10 @@
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\bin\Debug\netcoreapp3.1\FM_App_models.deps.json
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\bin\Debug\netcoreapp3.1\FM_App_models.dll
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\bin\Debug\netcoreapp3.1\FM_App_models.pdb
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.csproj.AssemblyReference.cache
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.AssemblyInfoInputs.cache
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.AssemblyInfo.cs
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.csproj.CoreCompileInputs.cache
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.dll
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_models\obj\Debug\netcoreapp3.1\FM_App_models.pdb

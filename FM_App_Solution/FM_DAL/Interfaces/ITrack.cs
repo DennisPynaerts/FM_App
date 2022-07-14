@@ -7,5 +7,6 @@ namespace FM_App_DAL.Interfaces
 {
     public interface ITrack
     {
+        public IEnumerable<Track> GetAllTracksWithWeatherSetting();
     }
 }

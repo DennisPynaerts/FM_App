@@ -14,6 +14,24 @@ namespace FM_models
 		public int buildYear { get; set; }
 		public string manufacturer { get; set; }
 		public string handling { get; set; }
-		public int PI { get; set; }		
-	}
+		public int PI { get; set; }
+
+        public Car(string manufacturer, string model, string handling, int PI)
+        {
+			this.manufacturer = manufacturer;	
+			this.model = model;
+			this.handling = handling;
+			this.PI = PI;
+        }
+
+        public Car()
+        {
+
+        }
+
+		public override string ToString()
+		{
+			return $"{handling}H - {manufacturer} {model}";
+		}
+	}	
 }

@@ -13,4 +13,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FM_DAL\FM_App_DAL.csproj" />
+    <ProjectReference Include="..\FM_models\FM_App_models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -7,5 +7,6 @@ namespace FM_App_DAL.Interfaces
 {
     public interface IClass
     {
+        public IEnumerable<Class> GetClasses(); 
     }
 }

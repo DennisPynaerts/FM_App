@@ -7,5 +7,7 @@ namespace FM_App_DAL.Interfaces
 {
     public interface ICar
     {
+        public IEnumerable<Car> GetAllCars();
+        public bool AddCar(Car car);
     }
 }

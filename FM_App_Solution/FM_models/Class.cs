@@ -9,5 +9,10 @@ namespace FM_models
         public int id { get; set; }
         public string name { get; set; }
         public int maxPI { get; set; }
+
+        public override string ToString()
+        {
+            return $"{name}";
+        }
     }
 }

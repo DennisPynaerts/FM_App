@@ -51,7 +51,7 @@
         </StackPanel>
         
         <Button x:Name="btnClear" Content="Clear All" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"></Button>
-        <Button x:Name="btnSubmitCar" Content="Submit Car" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5"></Button>
+        <Button x:Name="btnSubmitCar" Content="Submit Car" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Click="btnSubmitCar_Click"></Button>
 
         <TextBox materialDesign:HintAssist.Hint="Laptime (Format: 00.00.000)" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" x:Name="txtLaptime" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center" Background="{x:Null}" FontFamily="Verdana"  Margin="5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}"/>
         <Button x:Name="btnSubmitLaptime" Content="Submit Laptime" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Margin="5"></Button>

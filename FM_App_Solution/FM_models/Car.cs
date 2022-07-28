@@ -15,6 +15,7 @@ namespace FM_models
 		public string manufacturer { get; set; }
 		public string handling { get; set; }
 		public int PI { get; set; }
+		public ICollection<CarClass> carClasses { get; set; }
 
         public Car(string manufacturer, string model, string handling, int PI)
         {

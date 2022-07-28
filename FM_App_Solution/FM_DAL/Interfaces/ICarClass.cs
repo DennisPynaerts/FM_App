@@ -7,5 +7,6 @@ namespace FM_App_DAL.Interfaces
 {
     public interface ICarClass
     {
+        public bool AddCarToClass(int carId, int classId);
     }
 }

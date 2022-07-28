@@ -9,5 +9,8 @@ namespace FM_App_DAL.Interfaces
     {
         public IEnumerable<Car> GetAllCars();
         public bool AddCar(Car car);
+        public bool DeleteCar(int id);
+        public int GetIdFromNewestCar();
+        public IEnumerable<Car> GetCarsByClass(int classId);
     }
 }

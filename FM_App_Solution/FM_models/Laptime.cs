@@ -10,5 +10,6 @@ namespace FM_models
         public int carClassId { get; set; }
         public int trackId { get; set; }
         public string laptime { get; set; }
+        public CarClass carClass { get; set; }
     }
 }

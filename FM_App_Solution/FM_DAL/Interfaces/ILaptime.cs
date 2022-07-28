@@ -7,5 +7,6 @@ namespace FM_App_DAL.Interfaces
 {
     public interface ILaptime
     {
+        public bool AddLaptime(int carClassId, int trackId, string laptime);
     }
 }

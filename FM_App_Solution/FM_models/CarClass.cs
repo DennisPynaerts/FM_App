@@ -9,5 +9,8 @@ namespace FM_models
         public int id { get; set; }
         public int carId { get; set; }
         public int classId { get; set; }
+        public Car car { get; set; }
+        public Class @class { get; set; } 
+        public ICollection<Car> cars { get; set; }  
     }
 }

@@ -9,6 +9,7 @@ namespace FM_models
         public int id { get; set; }
         public string name { get; set; }
         public int maxPI { get; set; }
+        public ICollection<CarClass> carClasses { get; set; }
 
         public override string ToString()
         {

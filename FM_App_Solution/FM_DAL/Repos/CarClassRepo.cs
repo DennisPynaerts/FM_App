@@ -76,5 +76,22 @@ namespace FM_App_DAL.Repos
                 );
             }
         }
+
+        public CarClass GetCarClassIdByCarId(int carId)
+        {
+            string sql = @"SELECT carId";
+            sql += " FROM FM.dbo.CarClass";
+            sql += " WHERE @carId = carId";
+
+            var parameters = new
+            {
+                @carId = carId
+            };
+
+            using (IDbConnection db = new SqlConnection(ConnectionString))
+            {
+                return db.QuerySingleOrDefault<CarClass>(sql, parameters);
+            }
+        }
     }
 }

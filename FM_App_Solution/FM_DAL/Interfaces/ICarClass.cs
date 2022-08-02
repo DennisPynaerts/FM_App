@@ -10,6 +10,7 @@ namespace FM_App_DAL.Interfaces
         public bool AddCarToClass(int carId, int classId);
         public bool DeleteCarClass(int carId);
         public IEnumerable<CarClass> GetAllCarsAllClasses();
+        public CarClass GetCarClassIdByCarId(int carId);
 
     }
 }

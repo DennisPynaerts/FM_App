@@ -11,6 +11,6 @@ namespace FM_models
         public int classId { get; set; }
         public Car car { get; set; }
         public Class @class { get; set; } 
-        public ICollection<Car> cars { get; set; }  
+        public ICollection<Car> cars { get; set; }
     }
 }

@@ -86,15 +86,32 @@ namespace FM_App_WPF
             {
                 if (MessageBox.Show("Are you sure?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
-                    if (_carRepo.DeleteCar(((Car)cmbCars.SelectedItem).id))
+                    if (_carClassRepo.DeleteCarClass(((Car)cmbCars.SelectedItem).id))
                     {
-                        MessageBox.Show("Car deleted!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
-                        GetData();
+                        if (_carRepo.DeleteCar(((Car)cmbCars.SelectedItem).id))
+                        {
+                            MessageBox.Show("Car deleted!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+                            GetData();
+                        }
+                        else MessageBox.Show("Couldn't delete car!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
-                    else MessageBox.Show("Couldn't delete car!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             else MessageBox.Show("Make sure you select a car!", "FM App", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            //if (cmbCars.SelectedItem != null)
+            //{
+            //    if (MessageBox.Show("Are you sure?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            //    {
+            //        if (_carClassRepo.DeleteCarClass(((Car)cmbCars.SelectedItem).id), (((Car)cmbCars.SelectedItem).carClasses)))
+            //        {
+            //            MessageBox.Show("Car deleted!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+            //            GetData();
+            //        }
+            //        else MessageBox.Show("Couldn't delete car!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    }
+            //}
+            //else MessageBox.Show("Make sure you select a car!", "FM App", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void ClearFields()

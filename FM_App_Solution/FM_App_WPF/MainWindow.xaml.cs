@@ -134,20 +134,16 @@ namespace FM_App_WPF
         private bool ValidateLaptime()
         {
             string laptime = txtLaptime.Text;
-            if (!string.IsNullOrWhiteSpace(laptime) && laptime.Length == 9)
+            string minutes = laptime.Substring(0, 2);
+            string seconds = laptime.Substring(3, 2);
+            string milliseconds = laptime.Substring(6, 3);
+
+            if (laptime[2] == '.' && laptime[5] == '.')
             {
-                int locatie1 = laptime.IndexOf('.', 2, 1);
-                int locatie2 = laptime.IndexOf('.', 5, 1);
-                int teller = 0;
-                char[] indexes = laptime.ToCharArray();
-                for (int i = 0; i < indexes.Length; i++)
+                if (int.TryParse(minutes, out int min) && int.TryParse(seconds, out int sec) && int.TryParse(milliseconds, out int ms))
                 {
-                    int number = indexes[i] - 0;
-                    if (number >= 0)
-                        teller++;
-                }
-                if (teller == 7 && locatie1 == 2 && locatie2 == 5)
                     return true;
+                }
             }
             return false;
         }

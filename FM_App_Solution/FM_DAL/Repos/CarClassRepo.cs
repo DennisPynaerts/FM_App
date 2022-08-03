@@ -79,7 +79,7 @@ namespace FM_App_DAL.Repos
 
         public CarClass GetCarClassIdByCarId(int carId)
         {
-            string sql = @"SELECT carId";
+            string sql = @"SELECT id";
             sql += " FROM FM.dbo.CarClass";
             sql += " WHERE @carId = carId";
 

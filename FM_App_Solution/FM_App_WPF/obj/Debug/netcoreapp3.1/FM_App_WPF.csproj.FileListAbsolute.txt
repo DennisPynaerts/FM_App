@@ -50,3 +50,5 @@ C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\bin\Debug\netcoreapp3.1\FM_
 C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\bin\Debug\netcoreapp3.1\FM_App_models.dll
 C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\bin\Debug\netcoreapp3.1\FM_App_DAL.pdb
 C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\bin\Debug\netcoreapp3.1\FM_App_models.pdb
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\obj\Debug\netcoreapp3.1\LeaderboardWindow.g.cs
+C:\Users\pynae\Git\FM_App\FM_App_Solution\FM_App_WPF\obj\Debug\netcoreapp3.1\LeaderboardWindow.baml

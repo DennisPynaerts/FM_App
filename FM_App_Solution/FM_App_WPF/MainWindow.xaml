@@ -25,6 +25,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
         <ListBox x:Name="lstClass" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="5" Margin="5"></ListBox>
@@ -56,5 +57,7 @@
 
         <TextBox materialDesign:HintAssist.Hint="Laptime (Format: 00.00.000)" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" x:Name="txtLaptime" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center" Background="{x:Null}" FontFamily="Verdana"  Margin="5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}"/>
         <Button x:Name="btnSubmitLaptime" Content="Submit Laptime" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Click="btnSubmitLaptime_Click"></Button>
+
+        <Button x:Name="btnLeaderboard" Content="Show Leaderboard" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" Click="btnLeaderboard_Click" ></Button>
     </Grid>
 </Window>

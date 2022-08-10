@@ -1,0 +1,26 @@
+﻿<Window x:Class="FM_App_WPF.LeaderboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:FM_App_WPF"
+        mc:Ignorable="d"
+        Title="Leaderboard" Height="450" Width="800">
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblTrack" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana" FontSize="20" Margin="5"></Label>
+            <DataGrid x:Name="datagridLeaderboard"   AutoGenerateColumns="False" Grid.Row="1" Grid.Column="0" Margin="5" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Manufacturer" Binding="{Binding manufacturer}" Width="auto" />
+                    <DataGridTextColumn Header="Model" Binding="{Binding model}" Width="auto" />
+                    <DataGridTextColumn Header="Handling" Binding="{Binding handling}" Width="auto" />
+                    <DataGridTextColumn Header="PI" Binding="{Binding pi}" Width="auto" />
+                    <DataGridTextColumn Header="Laptime" Binding="{Binding laptime}" Width="auto" />
+                </DataGrid.Columns>
+            </DataGrid>
+    </Grid>
+</Window>

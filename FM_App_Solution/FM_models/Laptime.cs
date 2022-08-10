@@ -11,5 +11,11 @@ namespace FM_models
         public int trackId { get; set; }
         public string laptime { get; set; }
         public CarClass carClass { get; set; }
+        public Track track { get; set; }    
+
+        public override string ToString()
+        {
+            return laptime;
+        }
     }
 }

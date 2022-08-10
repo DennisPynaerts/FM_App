@@ -124,11 +124,35 @@ namespace FM_App_WPF
             {
                 if (ValidateLaptime())
                 {
-                    if (_laptimeRepo.AddLaptime(_carClassRepo.GetCarClassIdByCarId(car.id).id, track.id, txtLaptime.Text))
-                        MessageBox.Show("Laptime added successfully!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+                    if (_laptimeRepo.GetLaptimeByCarClassIdAndTrackId(_carClassRepo.GetCarClassIdByCarId(car.id).id, track.id) == 0)
+                    {
+                        if (_laptimeRepo.AddLaptime(_carClassRepo.GetCarClassIdByCarId(car.id).id, track.id, txtLaptime.Text))
+                            MessageBox.Show("Laptime added successfully!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else if (CompareLaptime(_laptimeRepo.GetLaptimeByTrackAndCarId(_carClassRepo.GetCarClassIdByCarId(car.id).id, track.id)))
+                    {
+                        if (_laptimeRepo.UpdateLaptime(_carClassRepo.GetCarClassIdByCarId(car.id).id, track.id, txtLaptime.Text))
+                            MessageBox.Show("Laptime updated successfully!", "FM App", MessageBoxButton.OK, MessageBoxImage.Information);
+                        else MessageBox.Show("Something went wrong, please check!", "FM App", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    else MessageBox.Show("Already exists!", "FM App", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else MessageBox.Show("Laptime invalid, please check!", "FM App", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        public bool CompareLaptime(string savedLaptime)
+        {
+            string laptime = txtLaptime.Text;
+            string minutes = laptime.Substring(0, 2);
+            string seconds = laptime.Substring(3, 2);
+            string milliseconds = laptime.Substring(6, 3);
+
+            if (int.Parse(minutes) <= int.Parse(savedLaptime.Substring(0, 2)) && int.Parse(seconds) <= int.Parse(savedLaptime.Substring(3, 2)) && int.Parse(milliseconds) <= int.Parse(savedLaptime.Substring(6, 3)))
+                return true;
+
+
+            return false;
         }
 
         private bool ValidateLaptime()
@@ -157,6 +181,16 @@ namespace FM_App_WPF
                     cmbCars.ItemsSource = _carRepo.GetCarsByClass(@class.id);
                 }
             }
+        }
+
+        private void btnLeaderboard_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbTracks.SelectedItem is Track _track)
+            {
+                LeaderboardWindow leaderboardWindow = new LeaderboardWindow(_track);
+                leaderboardWindow.Show();
+            }
+            
         }
     }
 }

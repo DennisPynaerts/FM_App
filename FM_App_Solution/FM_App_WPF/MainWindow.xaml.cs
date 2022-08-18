@@ -148,9 +148,17 @@ namespace FM_App_WPF
             string seconds = laptime.Substring(3, 2);
             string milliseconds = laptime.Substring(6, 3);
 
-            if (int.Parse(minutes) <= int.Parse(savedLaptime.Substring(0, 2)) && int.Parse(seconds) <= int.Parse(savedLaptime.Substring(3, 2)) && int.Parse(milliseconds) <= int.Parse(savedLaptime.Substring(6, 3)))
-                return true;
-
+            if (int.Parse(minutes) <= int.Parse(savedLaptime.Substring(0, 2))) 
+            {
+                if (int.Parse(seconds) < int.Parse(savedLaptime.Substring(3, 2)))
+                {
+                    return true;
+                }
+                else if (int.Parse(seconds) == int.Parse(savedLaptime.Substring(3, 2)) && int.Parse(milliseconds) < int.Parse(savedLaptime.Substring(6, 3)))
+                {
+                    return true;
+                }
+            }
 
             return false;
         }
